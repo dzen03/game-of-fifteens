@@ -1,15 +1,6 @@
 name: Integration Test
 
-on:
-  push:
-    paths:
-      - "frontend"
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'None'
-        required: false
-        default: ''
+on: [push, workflow_dispatch]
 
 
 jobs:

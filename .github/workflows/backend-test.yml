@@ -1,15 +1,6 @@
 name: CMake Tests
 
-on:
-  push:
-    paths:
-      - "backend"
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'None'
-        required: false
-        default: ''
+on: [push, workflow_dispatch]
 
 
 jobs:
