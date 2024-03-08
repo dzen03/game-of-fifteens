@@ -4,7 +4,12 @@ on:
   push:
     paths:
       - "frontend"
-  workflow_dispatch: []
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'None'
+        required: false
+        default: ''
 
 
 jobs:
