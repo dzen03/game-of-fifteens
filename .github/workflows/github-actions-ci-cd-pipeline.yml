@@ -1,0 +1,32 @@
+name: CMake Tests
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure CMake
+        run: cmake -S $GITHUB_WORKSPACE/backend -B ${{runner.workspace}}/backend/build
+
+      - name: Build
+        working-directory: ${{runner.workspace}}/backend/build
+        run: cmake --build .
+
+      - name: Test
+        working-directory: ${{runner.workspace}}/backend/build
+        run: GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: test_results_xml
+          path: ${{runner.workspace}}/backend/build/test-results/**/*.xml
