@@ -1,6 +1,10 @@
 name: CMake Tests
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths:
+      - "backend"
+  workflow_dispatch:
 
 jobs:
   build:
