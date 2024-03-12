@@ -13,7 +13,8 @@
 .main_box .head_box .text_box {
     display: flex;
     justify-content: center;
-    font-size: 32px;
+    font-size: 5vh;
+    text-align: center;
 }
 
 .main_box .table_box .table_body {
@@ -22,12 +23,12 @@
 }
 .main_box .table_box .table_body tbody {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: 10vh 10vh 10vh 10vh;
 }
 
 .main_box .table_box .table_body tbody .row-box {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 10lvh 10vh 10vh 10vh;
 }
 
 .main_box .table_box .table_body tbody .row-box td {
@@ -36,7 +37,8 @@
     flex-wrap: wrap;
     align-content: center;
     border: 1px solid black;
-    font-size: 32px;
+    font-size: 5vh;
+    margin: 2px;
 }
 
 .main_box .bottom_box .button_buddy {
@@ -45,7 +47,18 @@
 }
 
 .main_box .bottom_box .button_buddy .button {
-    width: 150px;
-    height: 75px;
-    font-size: 22px;
+    width: 18vh;
+    height: 9vh;
+    font-size: 5vh;
+}
+.main_box .table_box .table_body tbody .row-box td input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Arial, serif;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 5vh;
+    text-align: center;
 }
