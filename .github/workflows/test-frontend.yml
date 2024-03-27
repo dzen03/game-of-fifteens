@@ -3,8 +3,8 @@ name: HTML5 Validator for frontend
 on:
   push:
     paths:
-      - 'frontend/'
-      - '.github/workflows/'
+      - 'frontend/**'
+      - '.github/workflows/**'
 
 jobs:
   test-frontend:
