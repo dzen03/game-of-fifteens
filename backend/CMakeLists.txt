@@ -19,4 +19,4 @@ if(BUILD_TESTING)
 endif()
 
 add_subdirectory(fifteens)
-#add_subdirectory(simple-http-server)
+add_subdirectory(simple-http-server)
