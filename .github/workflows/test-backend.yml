@@ -1,10 +1,10 @@
-name: CI tests
+name: CTests for backend
 
 on:
   push:
     paths:
       - 'frontend/'
-      - '.github/workflows'
+      - '.github/workflows/'
 
 jobs:
   test-backend:

@@ -1,10 +1,10 @@
-name: CI tests
+name: HTML5 Validator for frontend
 
 on:
   push:
     paths:
       - 'frontend/'
-      - '.github/workflows'
+      - '.github/workflows/'
 
 jobs:
   test-frontend:
