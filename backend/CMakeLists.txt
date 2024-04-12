@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(fifteens-server)
 
 add_executable(fifteens-server main.cpp)
-target_link_libraries(fifteens-server PRIVATE main_sources)
+target_link_libraries(fifteens-server PRIVATE main_sources simple-http-server-sources)
 
 option(BUILD_TESTING "Enable tests" ON)
 if(BUILD_TESTING)
