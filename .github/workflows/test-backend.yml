@@ -3,7 +3,7 @@ name: CTests for backend
 on:
   push:
     paths:
-      - 'frontend/**'
+      - 'backend/**'
       - '.github/workflows/**'
 
 jobs:
