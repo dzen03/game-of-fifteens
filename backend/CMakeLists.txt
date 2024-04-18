@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(fifteens-server)
 
+set(CMAKE_CXX_STANDARD 20)
+
 add_executable(fifteens-server main.cpp)
 target_link_libraries(fifteens-server PRIVATE main_sources simple-http-server-sources)
 

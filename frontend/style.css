@@ -10,28 +10,29 @@
     gap: 10vh;
 }
 
-.main_box .head_box .text_box {
+.text_box {
     display: flex;
     justify-content: center;
     font-size: 5vh;
     text-align: center;
 }
 
-.main_box .table_box .table_body {
+.table_body {
     display: grid;
     justify-content: center;
 }
-.main_box .table_box .table_body tbody {
+
+tbody {
     display: grid;
     grid-template-rows: 10vh 10vh 10vh 10vh;
 }
 
-.main_box .table_box .table_body tbody .row-box {
+.row-box {
     display: grid;
     grid-template-columns: 10lvh 10vh 10vh 10vh;
 }
 
-.main_box .table_box .table_body tbody .row-box td {
+td {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -41,17 +42,26 @@
     margin: 2px;
 }
 
-.main_box .bottom_box .button_buddy {
+.button_buddy {
     display: flex;
     justify-content: center;
 }
 
-.main_box .bottom_box .button_buddy .button {
+.button {
     width: 18vh;
     height: 9vh;
     font-size: 5vh;
 }
-.main_box .table_box .table_body tbody .row-box td input {
+
+.button_arrow {
+    width: 8vh;
+    font-size: 5vh;
+    text-align: center;
+    margin: 1vh 2vh 1vh 2vh;
+
+}
+
+input {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -61,4 +71,9 @@
     border: none;
     font-size: 5vh;
     text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
