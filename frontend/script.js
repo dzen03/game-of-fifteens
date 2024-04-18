@@ -28,7 +28,7 @@ button.addEventListener("click", function ssanina() {
             http_response = JSON.parse(this.responseText);
         }
     }
-    http_request.open("GET", "http://localhost:8080/?array=" + arr, true);
+    http_request.open("GET", "http://localhost:8080/solve?array=" + arr, true);
     http_request.send();
 
     button_right.hidden = false;
