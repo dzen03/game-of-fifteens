@@ -4,10 +4,10 @@
 #include <cassert>
 #include <vector>
 
-#include "position.h"
+#include "Position.h"
 
 namespace fifteens {
-class move {
+class Move {
  public:
   Position get_start_position() { return start_position; }
   Position get_end_position() { return end_position; }
@@ -23,10 +23,10 @@ class move {
 };
 
 // receives matrix
-std::vector<move> solve(std::vector<std::vector<int>> input_matrix);
+std::vector<Move> solve(const std::vector<std::vector<int>>& input_matrix);
 
 // receives list of positions
-std::vector<move> solve(std::vector<Position> positions);
+std::vector<Move> solve(const std::vector<Position>& positions);
 
 } // fifteens
 
